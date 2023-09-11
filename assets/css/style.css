@@ -11,6 +11,10 @@ html, body {
 h1 {
     font-family: var(--header-font);
 }
+img {
+    user-select: none;
+    pointer-events: none;
+}
 :root {
     --header-font: 'Poppins', sans-serif;
 }
@@ -154,8 +158,6 @@ main {
     left: 0;
 }
 
-
-
 .first-page {
     width: 100%;
 }
@@ -297,7 +299,7 @@ footer .map {
 footer iframe {
     border-radius: 15px;
 }
-footer div:nth-child(3) {
+.footer > div:nth-child(3) {
     display: flex;
     gap: 72px;
 }
@@ -325,17 +327,41 @@ footer ul li:hover a {
 footer ul li:hover:not(:first-child) {
     transform: translateX(7px);
 }
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 16px;
+}
 .copyright {
     width: 100%;
     background-color: #1b1b1b;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .copyright p {
     padding: 32px 0;
     color: #FFFFFF;
 }
-
+footer i {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 28px;
+    border: 2px solid #FFFFFF;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: .3s ease;
+}
+footer i:hover {
+    background-color: white;
+    color: #1b1b1b;
+}
 
 /* responsive */
 @media screen and (max-width: 700px) {
