@@ -1,2 +1,2 @@
 # McDonalds
-<a href="fruzh.github.io/McDonalds">fruzh.github.io/McDonalds</a>
+<a href="https://fruzh.github.io/McDonalds">fruzh.github.io/McDonalds</a>
